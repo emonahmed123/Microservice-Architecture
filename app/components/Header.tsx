@@ -22,6 +22,12 @@ const Header = () => {
             >
               Next
             </Link>
+            <Link
+              href="/advensis-roadmap"
+              className="text-white  px-3 py-2 text-sm font-medium transition-colors"
+            >
+              Advensis Roadmap
+            </Link>
           </div>
         </div>
       </nav>
