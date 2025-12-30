@@ -141,7 +141,7 @@ const AdvensisRoadmapPresentation = () => {
                 key={i}
                 className="bg-slate-800/60 rounded-xl p-4 border border-slate-700 hover:border-opacity-100 transition-all cursor-pointer"
                 style={{ borderColor: member.color }}
-                onClick={() => setExpandedSection(expandedSection === member.name ? null : member.name)}
+                onClick={() => setExpandedSection(expandedSection === member.name ? '' : member.name)}
               >
                 <div className="text-center">
                   <div className="text-4xl mb-2">{member.avatar}</div>
