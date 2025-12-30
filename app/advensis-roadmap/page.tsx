@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 const AdvensisRoadmapPresentation = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [expandedSection, setExpandedSection] = useState(null);
+  const [expandedSection, setExpandedSection] = useState<string | number | null>(null);
 
   const team = [
     { name: 'Tamim', role: 'Lead Architect', avatar: '👨‍💻', responsibilities: ['Requirement Analysis', 'Database Design', 'Features Design', 'Mock', 'Backend Architecture', 'Complex Business Logic', 'Infrastructure Management'], color: '#8B5CF6' },
@@ -141,7 +141,7 @@ const AdvensisRoadmapPresentation = () => {
                 key={i}
                 className="bg-slate-800/60 rounded-xl p-4 border border-slate-700 hover:border-opacity-100 transition-all cursor-pointer"
                 style={{ borderColor: member.color }}
-                onClick={() => setExpandedSection(expandedSection === member.name ? '' : member.name)}
+                onClick={() => setExpandedSection(expandedSection === member.name ? null : member.name)}
               >
                 <div className="text-center">
                   <div className="text-4xl mb-2">{member.avatar}</div>
